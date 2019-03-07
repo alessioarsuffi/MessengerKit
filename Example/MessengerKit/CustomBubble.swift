@@ -31,19 +31,19 @@ class CustomBubble: UITextView {
     
     fileprivate func setupView() {
         
-        backgroundColor = .clear
+        backgroundColor = .white
         
-        layer.cornerRadius = 22
-        layer.masksToBounds = true
-        layer.borderWidth = 1
-        layer.borderColor = UIColor.white.cgColor
+//        layer.cornerRadius = 22
+//        layer.masksToBounds = true
+//        layer.borderWidth = 1
+//        layer.borderColor = UIColor.white.cgColor
         
         isEditable = false
         isSelectable = true // TODO: Check that links are tappable
         dataDetectorTypes = [.flightNumber, .calendarEvent, .address, .phoneNumber, .link, .lookupSuggestion]
         isUserInteractionEnabled = true
         delaysContentTouches = true
-        font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        font = UIFont.systemFont(ofSize: 14)
         translatesAutoresizingMaskIntoConstraints = false
         textContainerInset = UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 20)
         textContainer.lineFragmentPadding = 0

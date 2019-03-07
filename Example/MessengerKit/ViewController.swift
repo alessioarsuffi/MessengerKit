@@ -45,11 +45,11 @@ class ViewController: MSGMessengerViewController {
                 MSGMessage(id: 4, body: .text("Awesome 😁"), user: tim, sentAt: Date()),
             ],
             [
-                MSGMessage(id: 5, body: .text("Ugh, gotta sit through these two…"), user: steve, sentAt: Date()),
+                MSGMessage(id: 5, body: .text("Ugh, gotta sit through these two… Every. Single. Time. Every. Single. Time. Every. Single. Time. Every. Single. Time. Every. Single. Time."), user: steve, sentAt: Date()),
                 MSGMessage(id: 6, body: .image(#imageLiteral(resourceName: "Splatoon")), user: steve, sentAt: Date()),
             ],
             [
-                MSGMessage(id: 7, body: .text("Every. Single. Time."), user: tim, sentAt: Date()),
+                MSGMessage(id: 7, body: .text("Every. Single. Time. Every. Single. Time. Every. Single. Time. Every. Single. Time. Every. Single. Time. Every. Single. Time. Every. Single. Time. Every. Single. Time. Every. Single. Time. Every. Single. Time. Every. Single. Time."), user: tim, sentAt: Date()),
             ],
             [
                 MSGMessage(id: 8, body: .emoji("🙄😭"), user: steve, sentAt: Date())

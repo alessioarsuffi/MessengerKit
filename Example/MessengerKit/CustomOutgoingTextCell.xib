@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,8 +19,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="425" height="58"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="yat-HX-oiD" customClass="CustomBubble" customModule="MessengerKit_Example" customModuleProvider="target">
-                        <rect key="frame" x="87" y="0.0" width="322" height="58"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="yat-HX-oiD" customClass="CustomBubble" customModule="MessengerKit_Example" customModuleProvider="target">
+                        <rect key="frame" x="30" y="0.0" width="322" height="58"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="322" id="lj9-ie-w0p"/>
@@ -29,16 +29,27 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nrj-fi-QhZ">
+                        <rect key="frame" x="361" y="5" width="48" height="48"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="Way-fs-ScD"/>
+                            <constraint firstAttribute="width" constant="48" id="Y5R-zW-6mX"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="yat-HX-oiD" secondAttribute="bottom" id="Abt-Gl-MHs"/>
                 <constraint firstAttribute="trailing" secondItem="yat-HX-oiD" secondAttribute="trailing" constant="16" id="TCu-Pv-4Bi"/>
+                <constraint firstAttribute="trailing" secondItem="nrj-fi-QhZ" secondAttribute="trailing" constant="16" id="axE-2Q-ZYI"/>
                 <constraint firstItem="yat-HX-oiD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kLD-XB-AyD"/>
+                <constraint firstItem="nrj-fi-QhZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="s70-dR-yHa"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="425" height="58"/>
             <connections>
+                <outlet property="avatarView" destination="nrj-fi-QhZ" id="39t-cN-9Ix"/>
                 <outlet property="bubble" destination="yat-HX-oiD" id="bWJ-6y-klF"/>
                 <outlet property="bubbleWidthConstraint" destination="lj9-ie-w0p" id="RNE-bF-tK4"/>
             </connections>

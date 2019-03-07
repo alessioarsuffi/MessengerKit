@@ -25,6 +25,14 @@
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		CA183F4E2231757800E93ED5 /* WindStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183F4D2231757800E93ED5 /* WindStyle.swift */; };
+		CA183F502231767A00E93ED5 /* WindStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183F4F2231767A00E93ED5 /* WindStyleViewController.swift */; };
+		CA183F52223177C600E93ED5 /* WindCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183F51223177C600E93ED5 /* WindCollectionView.swift */; };
+		CA183F552231817000E93ED5 /* CustomOutgoingTextWindCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183F532231817000E93ED5 /* CustomOutgoingTextWindCell.swift */; };
+		CA183F562231817000E93ED5 /* CustomOutgoingTextWindCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA183F542231817000E93ED5 /* CustomOutgoingTextWindCell.xib */; };
+		CA183F592231869400E93ED5 /* CustomIncomingTextWindCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183F572231869400E93ED5 /* CustomIncomingTextWindCell.swift */; };
+		CA183F5A2231869400E93ED5 /* CustomIncomingTextWindCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA183F582231869400E93ED5 /* CustomIncomingTextWindCell.xib */; };
+		CA183F5D2231956B00E93ED5 /* WindTextBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183F5C2231956B00E93ED5 /* WindTextBubble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +61,14 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6305CFBE2273C031EEB89E94 /* Pods-MessengerKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessengerKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessengerKit_Example/Pods-MessengerKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A5446A2FEE297E072AD684B6 /* Pods-MessengerKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessengerKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessengerKit_Tests/Pods-MessengerKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CA183F4D2231757800E93ED5 /* WindStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindStyle.swift; sourceTree = "<group>"; };
+		CA183F4F2231767A00E93ED5 /* WindStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindStyleViewController.swift; sourceTree = "<group>"; };
+		CA183F51223177C600E93ED5 /* WindCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindCollectionView.swift; sourceTree = "<group>"; };
+		CA183F532231817000E93ED5 /* CustomOutgoingTextWindCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOutgoingTextWindCell.swift; sourceTree = "<group>"; };
+		CA183F542231817000E93ED5 /* CustomOutgoingTextWindCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomOutgoingTextWindCell.xib; sourceTree = "<group>"; };
+		CA183F572231869400E93ED5 /* CustomIncomingTextWindCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIncomingTextWindCell.swift; sourceTree = "<group>"; };
+		CA183F582231869400E93ED5 /* CustomIncomingTextWindCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomIncomingTextWindCell.xib; sourceTree = "<group>"; };
+		CA183F5C2231956B00E93ED5 /* WindTextBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindTextBubble.swift; sourceTree = "<group>"; };
 		DBB7F97C6BB0BCBFF7D581CE /* Pods-MessengerKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessengerKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessengerKit_Example/Pods-MessengerKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DE0D3BDE244C1084E7FD6602 /* Pods_MessengerKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessengerKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC5B078FE23390D836F96D4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -125,6 +141,7 @@
 		607FACD21AFB9204008FA782 /* Example for MessengerKit */ = {
 			isa = PBXGroup;
 			children = (
+				CA183F4C2231756C00E93ED5 /* Wind Style */,
 				2826278420D278520069D966 /* Custom Style */,
 				28C3375D20D1555500ED6803 /* Extensions */,
 				28C3375020D154FC00ED6803 /* ViewControllers */,
@@ -166,6 +183,29 @@
 				A5446A2FEE297E072AD684B6 /* Pods-MessengerKit_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA183F4C2231756C00E93ED5 /* Wind Style */ = {
+			isa = PBXGroup;
+			children = (
+				CA183F5B22318C4000E93ED5 /* Cell */,
+				CA183F4D2231757800E93ED5 /* WindStyle.swift */,
+				CA183F4F2231767A00E93ED5 /* WindStyleViewController.swift */,
+				CA183F51223177C600E93ED5 /* WindCollectionView.swift */,
+				CA183F5C2231956B00E93ED5 /* WindTextBubble.swift */,
+			);
+			name = "Wind Style";
+			sourceTree = "<group>";
+		};
+		CA183F5B22318C4000E93ED5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CA183F532231817000E93ED5 /* CustomOutgoingTextWindCell.swift */,
+				CA183F542231817000E93ED5 /* CustomOutgoingTextWindCell.xib */,
+				CA183F572231869400E93ED5 /* CustomIncomingTextWindCell.swift */,
+				CA183F582231869400E93ED5 /* CustomIncomingTextWindCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		E1270D0E63CC108B2D253E4C /* Frameworks */ = {
@@ -238,9 +278,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA183F5A2231869400E93ED5 /* CustomIncomingTextWindCell.xib in Resources */,
 				28C3375A20D1551A00ED6803 /* Main.storyboard in Resources */,
 				2826279220D280030069D966 /* CustomIncomingTextCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				CA183F562231817000E93ED5 /* CustomOutgoingTextWindCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				2826278E20D27C440069D966 /* CustomOutgoingTextCell.xib in Resources */,
 			);
@@ -273,7 +315,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MessengerKit_Example/Pods-MessengerKit_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MessengerKit_Example/Pods-MessengerKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MessengerKit/MessengerKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -282,7 +324,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MessengerKit_Example/Pods-MessengerKit_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MessengerKit_Example/Pods-MessengerKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -292,8 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA183F502231767A00E93ED5 /* WindStyleViewController.swift in Sources */,
 				2826279020D27C910069D966 /* CustomBubble.swift in Sources */,
+				CA183F5D2231956B00E93ED5 /* WindTextBubble.swift in Sources */,
 				28C3375820D1550D00ED6803 /* ViewController.swift in Sources */,
+				CA183F4E2231757800E93ED5 /* WindStyle.swift in Sources */,
+				CA183F52223177C600E93ED5 /* WindCollectionView.swift in Sources */,
+				CA183F552231817000E93ED5 /* CustomOutgoingTextWindCell.swift in Sources */,
 				2826278D20D27C440069D966 /* CustomOutgoingTextCell.swift in Sources */,
 				28C3375620D1550D00ED6803 /* TravamigosViewController.swift in Sources */,
 				28C3375C20D1553000ED6803 /* User.swift in Sources */,
@@ -303,6 +350,7 @@
 				2826278620D278880069D966 /* CustomStyleViewController.swift in Sources */,
 				28C3375520D1550D00ED6803 /* MessagesTableViewController.swift in Sources */,
 				2826278820D279890069D966 /* CustomStyle.swift in Sources */,
+				CA183F592231869400E93ED5 /* CustomIncomingTextWindCell.swift in Sources */,
 				28C3375720D1550D00ED6803 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
