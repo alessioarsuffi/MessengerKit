@@ -201,4 +201,7 @@ extension TravamigosViewController: MSGDelegate {
         return true
     }
     
+	func actionTapped(action: String, for message: MSGMessage) {
+		print("Tapped action: \(action), for: \(message)")
+	}
 }

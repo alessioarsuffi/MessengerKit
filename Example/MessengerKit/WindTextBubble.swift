@@ -52,7 +52,6 @@ class WindTextBubble: UITextView {
 		
 	}
 	
-	
 	func calculatedSize(in size: CGSize) -> CGSize {
 		// a: 40 + b: 16 + c: 16 + d: 8
 		// a: image size, b: left margin bubble, c: right margin avatar, d: space between avatar and bubble

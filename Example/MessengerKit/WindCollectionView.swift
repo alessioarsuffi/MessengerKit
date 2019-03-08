@@ -15,6 +15,8 @@ class WindCollectionView: MSGImessageCollectionView {
 		
 		register(UINib(nibName: "CustomOutgoingTextWindCell", bundle: nil), forCellWithReuseIdentifier: "outgoingText")
 		register(UINib(nibName: "CustomIncomingTextWindCell", bundle: nil), forCellWithReuseIdentifier: "incomingText")
+		let customOutgoingNib = UINib(nibName: "CustomIncomingBotWindCell", bundle: .main)
+		register(customOutgoingNib, forCellWithReuseIdentifier: "incomingCustom")
 	}
 	
 }

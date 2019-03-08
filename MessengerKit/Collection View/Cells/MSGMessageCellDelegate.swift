@@ -17,5 +17,6 @@ public protocol MSGMessageCellDelegate: NSObjectProtocol {
     func cellLinkTapped(url: URL)
     
     func cellAvatarTapped(for user: MSGUser)
-    
+	
+	func cellActionTapped(action: String, for message: MSGMessage)
 }

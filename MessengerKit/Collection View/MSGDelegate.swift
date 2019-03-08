@@ -47,6 +47,12 @@ public protocol MSGDelegate: NSObjectProtocol {
     /// - Returns: Whether the URL should be opened or not
     func shouldOpen(url: URL) -> Bool
     
+	
+	/// Called when user taps on action in custom messag
+	///
+	/// - Parameter action: The action tapped
+	/// - Parameter message: The message that has action
+	func actionTapped(action: String, for message: MSGMessage)
 }
 
 extension MSGDelegate {
@@ -63,4 +69,5 @@ extension MSGDelegate {
     
     public func shouldOpen(url: URL) -> Bool { return true }
     
+	public func actionTapped(action: String, for message: MSGMessage) { }
 }

@@ -61,6 +61,15 @@ struct WindStyle: MSGMessengerStyle {
 			
 			break
 			
+		case .custom(let any):
+			
+			if let botMessage = any as? BotMessage {
+				size = CGSize(width: collectionView.bounds.size.width, height: botMessage.height)
+			} else {
+				size = CGSize(width: collectionView.bounds.width, height: 175)
+			}
+			break
+			
 		default:
 			
 			size = CGSize(width: collectionView.bounds.width, height: 175)
@@ -70,6 +79,11 @@ struct WindStyle: MSGMessengerStyle {
 		
 		return size
 	}
+	
+	// Custom properties
+	
+	var incomingBotActionTextColor: UIColor = .windOrange
+	var outgoingBotActionTextColor: UIColor = .windOrange
 }
 
 extension UIColor {

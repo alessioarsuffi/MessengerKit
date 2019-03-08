@@ -33,6 +33,9 @@
 		CA183F592231869400E93ED5 /* CustomIncomingTextWindCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183F572231869400E93ED5 /* CustomIncomingTextWindCell.swift */; };
 		CA183F5A2231869400E93ED5 /* CustomIncomingTextWindCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA183F582231869400E93ED5 /* CustomIncomingTextWindCell.xib */; };
 		CA183F5D2231956B00E93ED5 /* WindTextBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183F5C2231956B00E93ED5 /* WindTextBubble.swift */; };
+		CA183F6022319B8A00E93ED5 /* CustomIncomingBotWindCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183F5E22319B8A00E93ED5 /* CustomIncomingBotWindCell.swift */; };
+		CA183F6122319B8A00E93ED5 /* CustomIncomingBotWindCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA183F5F22319B8A00E93ED5 /* CustomIncomingBotWindCell.xib */; };
+		CA183F6322319CCB00E93ED5 /* BotMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183F6222319CCB00E93ED5 /* BotMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,9 @@
 		CA183F572231869400E93ED5 /* CustomIncomingTextWindCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIncomingTextWindCell.swift; sourceTree = "<group>"; };
 		CA183F582231869400E93ED5 /* CustomIncomingTextWindCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomIncomingTextWindCell.xib; sourceTree = "<group>"; };
 		CA183F5C2231956B00E93ED5 /* WindTextBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindTextBubble.swift; sourceTree = "<group>"; };
+		CA183F5E22319B8A00E93ED5 /* CustomIncomingBotWindCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIncomingBotWindCell.swift; sourceTree = "<group>"; };
+		CA183F5F22319B8A00E93ED5 /* CustomIncomingBotWindCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomIncomingBotWindCell.xib; sourceTree = "<group>"; };
+		CA183F6222319CCB00E93ED5 /* BotMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotMessage.swift; sourceTree = "<group>"; };
 		DBB7F97C6BB0BCBFF7D581CE /* Pods-MessengerKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessengerKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessengerKit_Example/Pods-MessengerKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DE0D3BDE244C1084E7FD6602 /* Pods_MessengerKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessengerKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC5B078FE23390D836F96D4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -193,6 +199,7 @@
 				CA183F4F2231767A00E93ED5 /* WindStyleViewController.swift */,
 				CA183F51223177C600E93ED5 /* WindCollectionView.swift */,
 				CA183F5C2231956B00E93ED5 /* WindTextBubble.swift */,
+				CA183F6222319CCB00E93ED5 /* BotMessage.swift */,
 			);
 			name = "Wind Style";
 			sourceTree = "<group>";
@@ -204,6 +211,8 @@
 				CA183F542231817000E93ED5 /* CustomOutgoingTextWindCell.xib */,
 				CA183F572231869400E93ED5 /* CustomIncomingTextWindCell.swift */,
 				CA183F582231869400E93ED5 /* CustomIncomingTextWindCell.xib */,
+				CA183F5E22319B8A00E93ED5 /* CustomIncomingBotWindCell.swift */,
+				CA183F5F22319B8A00E93ED5 /* CustomIncomingBotWindCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -282,6 +291,7 @@
 				28C3375A20D1551A00ED6803 /* Main.storyboard in Resources */,
 				2826279220D280030069D966 /* CustomIncomingTextCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				CA183F6122319B8A00E93ED5 /* CustomIncomingBotWindCell.xib in Resources */,
 				CA183F562231817000E93ED5 /* CustomOutgoingTextWindCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				2826278E20D27C440069D966 /* CustomOutgoingTextCell.xib in Resources */,
@@ -337,11 +347,13 @@
 				CA183F502231767A00E93ED5 /* WindStyleViewController.swift in Sources */,
 				2826279020D27C910069D966 /* CustomBubble.swift in Sources */,
 				CA183F5D2231956B00E93ED5 /* WindTextBubble.swift in Sources */,
+				CA183F6022319B8A00E93ED5 /* CustomIncomingBotWindCell.swift in Sources */,
 				28C3375820D1550D00ED6803 /* ViewController.swift in Sources */,
 				CA183F4E2231757800E93ED5 /* WindStyle.swift in Sources */,
 				CA183F52223177C600E93ED5 /* WindCollectionView.swift in Sources */,
 				CA183F552231817000E93ED5 /* CustomOutgoingTextWindCell.swift in Sources */,
 				2826278D20D27C440069D966 /* CustomOutgoingTextCell.swift in Sources */,
+				CA183F6322319CCB00E93ED5 /* BotMessage.swift in Sources */,
 				28C3375620D1550D00ED6803 /* TravamigosViewController.swift in Sources */,
 				28C3375C20D1553000ED6803 /* User.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

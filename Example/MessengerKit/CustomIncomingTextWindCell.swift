@@ -9,7 +9,6 @@
 import MessengerKit
 
 class CustomIncomingTextWindCell: MSGMessageCell {
-
     
 	@IBOutlet weak var bubble: WindTextBubble!
 	
