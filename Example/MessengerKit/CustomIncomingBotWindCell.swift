@@ -37,6 +37,13 @@ class CustomIncomingBotWindCell: MSGMessageCell {
 			guard let style = style as? WindStyle, let message = message else { return }
 			
 			if case let MSGMessageBody.custom(any) = message.body, let botMessage = any as? BotMessage {
+				
+				if let actionsStackView = actionsStackView {
+					actionsStackView.arrangedSubviews.forEach {
+						$0.removeFromSuperview()
+					}
+				}
+				
 				botMessage.actions.forEach {
 					let button = UIButton()
 					button.addTarget(self, action: #selector(actionTapped(_:)), for: .touchUpInside)
