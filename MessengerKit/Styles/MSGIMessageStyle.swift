@@ -39,6 +39,8 @@ public struct MSGIMessageStyle: MSGMessengerStyle {
     
     public var incomingLinkColor: UIColor = UIColor(hue:0.58, saturation:0.81, brightness:0.95, alpha:1.00)
     
+	public var messengerViewNibName: String? = nil
+	
     public func size(for message: MSGMessage, in collectionView: UICollectionView) -> CGSize {
         
         var size: CGSize!

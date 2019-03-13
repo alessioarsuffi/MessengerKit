@@ -60,6 +60,9 @@ public protocol MSGMessengerStyle {
     /// Color of links on the incoming messages
     var incomingLinkColor: UIColor { get }
 
+	/// Custom nibName of MSGMessengerView to load
+	var messengerViewNibName: String? { get }
+	
     /// Calculates the size of the cell for a given message
     ///
     /// - Parameter message: The message to calculate the size for

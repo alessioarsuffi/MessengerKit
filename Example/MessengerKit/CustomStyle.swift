@@ -40,6 +40,8 @@ struct CustomStyle: MSGMessengerStyle {
     
     var incomingLinkColor: UIColor = .white
     
+	var messengerViewNibName: String? = nil
+	
     func size(for message: MSGMessage, in collectionView: UICollectionView) -> CGSize {
         var size: CGSize!
         

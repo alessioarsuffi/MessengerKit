@@ -39,6 +39,8 @@ public struct MSGTravamigosStyle: MSGMessengerStyle {
     
     public var incomingLinkColor: UIColor = UIColor(red:1.00, green:0.30, blue:0.13, alpha:1.00)
     
+	public var messengerViewNibName: String? = "WindMessengerView"
+	
     public func size(for message: MSGMessage, in collectionView: UICollectionView) -> CGSize {
         
         var size: CGSize!

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZWD-D6-XM5" customClass="MSGMessengerView" customModule="MessengerKit">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWh-DJ-BVs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="133.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icona_windy_grande" translatesAutoresizingMaskIntoConstraints="NO" id="14Q-rS-5yZ">
+                            <rect key="frame" x="147.5" y="12" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="14Q-rS-5yZ" secondAttribute="height" multiplier="1:1" id="5m0-yG-S6v"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciao sono Windy!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLa-69-Hkg">
+                            <rect key="frame" x="120.5" y="100" width="134" height="20"/>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rLa-69-Hkg" firstAttribute="centerX" secondItem="AWh-DJ-BVs" secondAttribute="centerX" id="2cy-m4-GWv"/>
+                        <constraint firstItem="14Q-rS-5yZ" firstAttribute="top" secondItem="AWh-DJ-BVs" secondAttribute="top" constant="12" id="F6L-5i-kQM"/>
+                        <constraint firstItem="rLa-69-Hkg" firstAttribute="top" secondItem="14Q-rS-5yZ" secondAttribute="bottom" constant="8" id="hRL-Y2-FOT"/>
+                        <constraint firstItem="14Q-rS-5yZ" firstAttribute="height" secondItem="AWh-DJ-BVs" secondAttribute="height" multiplier="0.6" id="qu0-cg-VAq"/>
+                        <constraint firstItem="14Q-rS-5yZ" firstAttribute="centerX" secondItem="AWh-DJ-BVs" secondAttribute="centerX" id="vOj-Yj-oSb"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="J8x-eR-MVX"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXc-TN-5uk">
+                    <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" placeholder="YES" id="gx9-yv-tSZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mub-SI-l7M" userLabel="Message Background View">
+                    <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-XT-sd9">
+                    <rect key="frame" x="0.0" y="133.5" width="375" height="485.5"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bQd-XT-sd9" firstAttribute="top" secondItem="AWh-DJ-BVs" secondAttribute="bottom" id="4LR-hn-Nht"/>
+                <constraint firstItem="mub-SI-l7M" firstAttribute="trailing" secondItem="ZWD-D6-XM5" secondAttribute="trailing" id="4ZA-8v-uSE"/>
+                <constraint firstItem="AWh-DJ-BVs" firstAttribute="top" secondItem="ZWD-D6-XM5" secondAttribute="top" id="725-Pf-fCv"/>
+                <constraint firstItem="AWh-DJ-BVs" firstAttribute="leading" secondItem="Rue-4f-UDm" secondAttribute="leading" id="D2T-qf-y64"/>
+                <constraint firstItem="NXc-TN-5uk" firstAttribute="bottom" secondItem="Rue-4f-UDm" secondAttribute="bottom" placeholder="YES" id="LCJ-B3-S5D"/>
+                <constraint firstItem="Rue-4f-UDm" firstAttribute="trailing" secondItem="bQd-XT-sd9" secondAttribute="trailing" id="Sy4-fu-xEz"/>
+                <constraint firstItem="mub-SI-l7M" firstAttribute="top" secondItem="NXc-TN-5uk" secondAttribute="bottom" id="hzs-zX-HzJ"/>
+                <constraint firstItem="AWh-DJ-BVs" firstAttribute="height" secondItem="ZWD-D6-XM5" secondAttribute="height" multiplier="0.2" id="jhe-FX-0hW"/>
+                <constraint firstItem="mub-SI-l7M" firstAttribute="leading" secondItem="ZWD-D6-XM5" secondAttribute="leading" id="kEg-9l-9Dz"/>
+                <constraint firstItem="NXc-TN-5uk" firstAttribute="leading" secondItem="ZWD-D6-XM5" secondAttribute="leading" id="lj6-IF-HO3"/>
+                <constraint firstItem="bQd-XT-sd9" firstAttribute="leading" secondItem="Rue-4f-UDm" secondAttribute="leading" id="olV-fd-B9N"/>
+                <constraint firstAttribute="trailing" secondItem="NXc-TN-5uk" secondAttribute="trailing" id="qLP-JH-5Lf"/>
+                <constraint firstItem="mub-SI-l7M" firstAttribute="bottom" secondItem="ZWD-D6-XM5" secondAttribute="bottom" id="qn1-Gc-HcD"/>
+                <constraint firstItem="NXc-TN-5uk" firstAttribute="top" secondItem="bQd-XT-sd9" secondAttribute="bottom" id="tdM-Au-URE"/>
+                <constraint firstItem="AWh-DJ-BVs" firstAttribute="trailing" secondItem="Rue-4f-UDm" secondAttribute="trailing" id="zjZ-fG-MT9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Rue-4f-UDm"/>
+            <connections>
+                <outlet property="backgroundView" destination="mub-SI-l7M" id="A3u-L1-K35"/>
+                <outlet property="collectionViewContainer" destination="bQd-XT-sd9" id="7AT-bJ-VbY"/>
+                <outlet property="inputViewContainer" destination="NXc-TN-5uk" id="qQL-0m-OVT"/>
+            </connections>
+            <point key="canvasLocation" x="31.199999999999999" y="-125.4872563718141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icona_windy_grande" width="16" height="16"/>
+    </resources>
+</document>

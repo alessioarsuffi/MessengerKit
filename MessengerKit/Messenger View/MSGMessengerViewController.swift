@@ -135,9 +135,15 @@ open class MSGMessengerViewController: UIViewController {
     }
     
     private func loadFromDefaultNib() {
-        let view = UINib(nibName: "MSGMessengerView", bundle: MessengerKit.bundle)
+		var view: MSGMessengerView?
+		
+		if let customNib = style.messengerViewNibName {
+			view = UINib(nibName: customNib, bundle: .main).instantiate(withOwner: self, options: nil).first as? MSGMessengerView
+		} else {
+        	view = UINib(nibName: "MSGMessengerView", bundle: MessengerKit.bundle)
             .instantiate(withOwner: self, options: nil).first as? MSGMessengerView
-        
+		}
+		
         view?.frame = CGRect.zero
         view?.backgroundView.backgroundColor = style.inputViewBackgroundColor
         view?.add(collectionView)

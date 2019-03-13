@@ -40,6 +40,7 @@ class CustomIncomingBotWindCell: MSGMessageCell {
 				
 				if let actionsStackView = actionsStackView {
 					actionsStackView.arrangedSubviews.forEach {
+						actionsStackView.removeArrangedSubview($0)
 						$0.removeFromSuperview()
 					}
 				}

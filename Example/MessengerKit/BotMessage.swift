@@ -19,8 +19,6 @@ struct BotMessage {
 		actions.forEach { _ in
 			result += 50.0 + 10.0
 		}
-		
-		print("botMessage height: \(result)")
 		return result
 	}
 }

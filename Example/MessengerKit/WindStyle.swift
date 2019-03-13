@@ -40,6 +40,8 @@ struct WindStyle: MSGMessengerStyle {
 	
 	var incomingLinkColor: UIColor = .sendButtonChatEnabled
 	
+	var messengerViewNibName: String? = "WindMessengerView"
+	
 	func size(for message: MSGMessage, in collectionView: UICollectionView) -> CGSize {
 		var size: CGSize!
 		
