@@ -173,8 +173,11 @@ open class MSGMessengerViewController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.prefetchDataSource = self
-        collectionView.isPrefetchingEnabled = true
+		
+		if #available(iOS 10.0, *) {
+			collectionView.prefetchDataSource = self
+			collectionView.isPrefetchingEnabled = true
+		}
         
         collectionView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
         
