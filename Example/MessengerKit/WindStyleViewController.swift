@@ -41,6 +41,8 @@ class WindStyleViewController: MSGMessengerViewController {
 				MSGMessage(id: 9, body: .custom(BotMessage(text: "Ecco le opzioni:", actions: ["Opzione 1", "Opzione 2", "Opzione 3"])), user: tim, sentAt: Date())
 			],
 			[
+				MSGMessage(id: 10, body: .custom(BotMessage(text: "Ecco le opzioni:", actions: ["This is a very long action", "This is a super and so much important action", "Opzione 3", "Opzione 4", "Opzione 5"])), user: tim, sentAt: Date()),
+				MSGMessage(id: 10, body: .custom(BotMessage(text: "Ecco le opzioni:", actions: ["This is a very long action", "This is a super and so much important action", "Opzione 3", "Opzione 4", "Opzione 5"])), user: tim, sentAt: Date()),
 				MSGMessage(id: 10, body: .custom(BotMessage(text: "Ecco le opzioni:", actions: ["This is a very long action", "This is a super and so much important action", "Opzione 3", "Opzione 4", "Opzione 5"])), user: tim, sentAt: Date())
 			]
 		]
@@ -179,11 +181,11 @@ extension WindStyleViewController: MSGDelegate {
 		return true
 	}
 	
-	func actionTapped(action: String, for message: MSGMessage) {
+	func actionTapped(action: MSGBotActionDelegate, for message: MSGMessage) {
 		id += 1
 		print("Tapped action: \(action), for: \(message)")
 		
-		let body: MSGMessageBody = .text(action)
+		let body: MSGMessageBody = .text(action.text)
 		let message = MSGMessage(id: id, body: body, user: steve, sentAt: Date())
 		insert(message)
 	}

@@ -200,8 +200,8 @@ extension TravamigosViewController: MSGDelegate {
     func shouldOpen(url: URL) -> Bool {
         return true
     }
-    
-	func actionTapped(action: String, for message: MSGMessage) {
+	
+	func actionTapped(action: MSGBotActionDelegate, for message: MSGMessage) {
 		print("Tapped action: \(action), for: \(message)")
 	}
 }

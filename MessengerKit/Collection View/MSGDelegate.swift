@@ -46,13 +46,19 @@ public protocol MSGDelegate: NSObjectProtocol {
     /// - Parameter url: The URL that was tapped
     /// - Returns: Whether the URL should be opened or not
     func shouldOpen(url: URL) -> Bool
-    
 	
 	/// Called when user taps on action in custom messag
 	///
 	/// - Parameter action: The action tapped
 	/// - Parameter message: The message that has action
-	func actionTapped(action: String, for message: MSGMessage)
+	func actionTapped(action: MSGBotActionDelegate, for message: MSGMessage)
+}
+
+/// This delegate is used to interact with bot actions
+public protocol MSGBotActionDelegate: NSObjectProtocol {
+	
+	var text: String { get set }
+	var action: String { get set }
 }
 
 extension MSGDelegate {
