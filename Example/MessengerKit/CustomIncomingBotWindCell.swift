@@ -76,6 +76,6 @@ class CustomIncomingBotWindCell: MSGMessageCell {
 	@objc func actionTapped(_ sender: UIButton) {
 		guard let message = message, let action = sender.currentTitle else { return }
 		
-		delegate?.cellActionTapped(action: action, for: message)
+//		delegate?.cellActionTapped(action: action, for: message)
 	}
 }

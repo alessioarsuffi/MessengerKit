@@ -43,7 +43,7 @@ extension MSGMessengerViewController: MSGMessageCellDelegate {
         delegate?.avatarTapped(for: user)
     }
 	
-	public func cellActionTapped(action: String, for message: MSGMessage) {
+	public func cellActionTapped(action: MSGBotActionDelegate, for message: MSGMessage) {
 		delegate?.actionTapped(action: action, for: message)
 	}
 }

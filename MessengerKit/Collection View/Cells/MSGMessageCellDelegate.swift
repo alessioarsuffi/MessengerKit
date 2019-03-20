@@ -18,5 +18,5 @@ public protocol MSGMessageCellDelegate: NSObjectProtocol {
     
     func cellAvatarTapped(for user: MSGUser)
 	
-	func cellActionTapped(action: String, for message: MSGMessage)
+	func cellActionTapped(action: MSGBotActionDelegate, for message: MSGMessage)
 }
