@@ -152,7 +152,7 @@ extension MSGPlaceholderTextView: UITextViewDelegate {
     
 }
 
-public protocol MSGPlaceholderTextViewDelegate: NSObjectProtocol {
+@objc public protocol MSGPlaceholderTextViewDelegate: NSObjectProtocol {
     
     func textViewDidChange(_ textView: UITextView)
     
